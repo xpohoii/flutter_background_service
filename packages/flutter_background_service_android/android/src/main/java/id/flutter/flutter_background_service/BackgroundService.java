@@ -154,8 +154,8 @@ public class BackgroundService extends Service implements MethodChannel.MethodCa
 
     private void createNotificationChannel() {
         if (SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = "Background Service";
-            String description = "Executing process in background";
+            CharSequence name = "Синхронизация";
+            String description = "Обмен данными в фоновом режиме";
 
             int importance = NotificationManager.IMPORTANCE_LOW;
             NotificationChannel channel = new NotificationChannel(notificationChannelId, name, importance);
